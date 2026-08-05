@@ -869,8 +869,8 @@ window.DIP_DEFAULT_DOC = {
   theme:{ accent:'#2f6bff', police:false },
   hero:{ eyebrow:'Polícia de Lynwood', t1:'Material de Estudo ', dip:'POLÍCIA',
     sub:'Material de estudo pra polícia de Lynwood',
-    motto:'"Profissionalismo, eficiência e realismo nas atividades de RP policial."', author:'Sra Maya' },
-  footer:{ strip:'Disciplina ◆ Respeito ◆ Hierarquia ◆ Honra ◆ Lealdade ◆ Justiça', cr:'Feito por Sra Maya · Polícia de Lynwood' },
+    motto:'"Profissionalismo, eficiência e realismo nas atividades de RP policial."', author:'Vitor Sant' },
+  footer:{ strip:'Disciplina ◆ Respeito ◆ Hierarquia ◆ Honra ◆ Lealdade ◆ Justiça', cr:'Polícia de Lynwood' },
   sections:[
     { id:'s1', eyebrow:'CORPORAÇÃO · Regras', title:'Regras da Polícia', subtitle:'Os princípios inegociáveis da corporação. A quebra leva à repreensão e, em reincidência, à expulsão.', kind:'rules',
       items:[
@@ -1368,7 +1368,7 @@ function sectionHTML(sec,si){
 }
 
 function render(){
-  if(!DOC.footer) DOC.footer={strip:'Disciplina ◆ Respeito ◆ Hierarquia ◆ Honra ◆ Lealdade ◆ Justiça',cr:'DP Lynwood · Feito por Scarlet Zolanski'};
+  if(!DOC.footer) DOC.footer={strip:'Disciplina ◆ Respeito ◆ Hierarquia ◆ Honra ◆ Lealdade ◆ Justiça',cr:'DP Lynwood · Feito por Vitor Sant'};
   if(!DOC.hero) DOC.hero={};
   if(DOC.brand==null) DOC.brand='DP LYNWOOD';
   if(!DOC.theme) DOC.theme={accent:'#2f6bff',police:false};
@@ -1386,6 +1386,7 @@ function render(){
       ${txt('hero.sub',h.sub,'sub','div')}
       <p class="motto">${txt('hero.motto',h.motto,'','span')}</p>
       <p class="byline">Feito por: ${txt('hero.author',h.author,'','b')}</p>
+      
     </div>
   </header>`;
   // NAV (+ progresso e marcação de estudado no viewer)
